@@ -1,16 +1,28 @@
 {
   "development": {
     "postgres": {
-      "host": "localhost",
+      "host": "postgres",
       "port": 1234,
       "database": "databasename",
       "user": "user",
       "password": "password"
     },
     "redis": {
-      "host": "localhost",
+      "host": "redis",
       "port": 1234
     }
   },
-  "production": {}
+  "production": {
+    "postgres": {
+      "host": "postgres",
+      "port": 5432,
+      "database": "databasename",
+      "user": "user",
+      "password": "password"
+    },
+    "redis": {
+      "host": "redis",
+      "port": 6379
+    }
+  }
 }
